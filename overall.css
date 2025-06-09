@@ -176,7 +176,7 @@ span,
     width: 100%;
     height: 87vh;
     background-size: cover;
-    background-image: url("../Images/splashScreen.png");
+    background-image: url("Images/splashScreen.png");
 }
 
 .aboutMe {
