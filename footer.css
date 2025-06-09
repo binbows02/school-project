@@ -1,0 +1,67 @@
+footer {
+    position: relative;
+    width: 100%;
+}
+
+footer .contact {
+    margin: 20% 250px;
+}
+
+footer .socials {
+    margin: 100px 250px;
+}
+
+.social img {
+    width: 45px;
+    height: 45px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 25px 0;
+}
+
+.contact img {
+    width: 35px;
+    height: 35px;
+}
+
+.contact .info {
+    margin: 20px 0;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.contact .grayBG {
+    background-color: rgba(30, 33, 34, 1);
+    padding: 1px 30px;
+    width: 500px;
+}
+
+.contact div {
+    margin: 40px 0;
+}
+
+.sitemap {
+    margin: 0 0 10px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.sitemap a {
+    font-family: RobotoMono, monospace;
+    font-size: 0.9rem;
+}
+
+.toTop {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.toTop button {
+    padding: 5px 15px 5px 20px;
+}

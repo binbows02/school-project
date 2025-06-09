@@ -1,0 +1,103 @@
+main {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.webDesign {
+    width: fit-content;
+    padding: 10px;
+
+    transition: background-color 150ms;
+}
+
+.webDesign div {
+    padding: 0 20px 0 0;
+}
+
+.webDesign:hover {
+    background-color: rgba(49, 53, 56, 1);
+    cursor: pointer;
+}
+
+.webDesign img {
+    width: 600px;
+    height: 337.5px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.webDesign .info img {
+    width: 25px;
+    height: 25px;
+}
+
+.webDesign .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 620px);
+    row-gap: 90px;
+}
+
+.aboutMe .info .moreInfo {
+    margin-top: 20px;
+}
+
+.aboutMe .info .moreInfo:hover {
+    cursor: pointer;
+}
+
+main .grid {
+    margin: 50px 0 150px 0;
+}
+
+.selection {
+    display: flex;
+    gap: 20px;
+    padding: 50px 0;
+
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.selection button {
+    padding: 15px 50px;
+}
+
+.titleWork {
+    margin: 40px 0 0 0;
+}
+
+.splashText {
+    padding: 10% 13%;
+}
+
+.splashText div {
+    display: flex;
+}
+
+.splashText h3 {
+    font-size: 170%;
+    margin-top: 50px;
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 20px;
+
+    cursor: pointer;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#typeLineJS {
+    color: white;
+}

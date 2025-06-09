@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 75px;
+    margin-left: 500px;
+    padding: 0;
+    margin-left: 220px;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 5px 15px;
+
+    transition: background-color 150ms;
+}
+
+.userProfile p {
+    font-size: 1rem;
+}
+
+.userProfile div {
+    margin-right: 10px;
+    text-align: right;
+}
+
+.userProfile img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.userProfile:hover {
+    background-color: rgba(36, 41, 43, 1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hamburgerMenu {
+    position: fixed;
+    z-index: 99;
+
+    display: flex;
+    align-items: center;
+    background-color: rgba(37, 41, 43, 1);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px 65px 10px 15px;
+    gap: 20px;
+
+    transition: background-color 150ms;
+    cursor: pointer;
+}
+
+.hamburgerMenu:hover {
+    background-color: rgba(49, 53, 56, 1);
+}
+
+.hamburgerMenu img {
+    width: 35px;
+    height: 35px;
+}
+
+.hamburgerMenu p {
+    text-decoration: underline;
+}
+
+.currentlySelected {
+    color: rgba(255, 224, 180, 1)
+}
+
+.userProfile .p2 {
+    font-family: istokWeb, sans-serif;
+    font-size: 0.95rem;
+}
+
+.userOpen {
+    background-color: rgba(37, 41, 43, 1);
+    border-radius: 5px;
+}
+
+.userOpen img {
+    box-shadow: 0px 0px 7px rgb(255, 255, 255);
+}

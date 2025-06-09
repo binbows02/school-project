@@ -1,0 +1,215 @@
+@font-face {
+    font-family: RobotoMono;
+    src: url('Fonts/RobotoMonoReg.ttf');
+}
+
+@font-face {
+    font-family: IstokWeb;
+    src: url('Fonts/IstokWebReg.ttf');
+}
+
+@font-face {
+    font-family: KdamReg;
+    src: url('Fonts/KdamRegular.ttf');
+}
+
+body {
+    margin: 0;
+    background-color: rgba(15, 15, 15, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+.p3 {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    color: rgb(231, 231, 231);
+    font-family: IstokWeb, RobotoMono, sans-serif;
+}
+
+h1 {
+    font-size: 260%;
+    color: rgba(255, 191, 101, 1);
+    font-weight: 1;
+    font-family: KdamReg, IstokWeb, RobotoMono, sans-serif;
+}
+
+h2,
+h3,
+h4,
+.p3 {
+    margin: 5px 0;
+    color: rgba(23, 239, 255, 1);
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-family: RobotoMono, sans-serif;
+}
+
+h2 {
+    font-size: 1.6rem;
+    position: relative;
+    display: inline-block;
+    margin: 0 0 25px 0;
+}
+
+h2:before {
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    left: 0;
+    bottom: -10px;
+    background: white;
+    display: block;
+    content: "";
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    margin: 5px 0;
+    color: rgba(85, 159, 205, 1);
+    font-size: 1.15rem;
+}
+
+.p2 {
+    font-size: 0.9rem;
+    color: rgba(177, 177, 177, 1)
+}
+
+.p3 {
+    font-size: 0.9rem;
+    font-weight: 1;
+    color: rgba(122, 178, 92, 1);
+}
+
+header ul {
+    list-style: none;
+}
+
+header p {
+    font-family: RobotoMono, sans-serif;
+}
+
+li a {
+    font-family: robotoMono, sans-serif;
+}
+
+span,
+.social div p {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.socials .p2 {
+    font-size: 1rem;
+}
+
+.primary {
+    display: flex;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+    background-color: rgba(13, 78, 142, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 150ms;
+}
+
+.primary:hover {
+    background-color: rgba(18, 87, 154, 1);
+}
+
+.secondary:hover p,
+.secondary:hover {
+    color: rgba(189, 212, 255, 1);
+}
+
+.secondary {
+    display: flex;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+    border-radius: 5px;
+
+    gap: 10px;
+
+    cursor: pointer;
+    transition: border 150ms;
+}
+
+.secondary:hover {
+    border: rgba(189, 212, 255, 1) solid 1px;
+}
+
+.secondary:hover p,
+.secondary:hover {
+    color: rgba(189, 212, 255, 1);
+}
+
+.robotoBold {
+    font-family: robotoMono, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.splashScreen {
+    position: relative;
+    width: 100%;
+    height: 87vh;
+    background-size: cover;
+    background-image: url("../Images/splashScreen.png");
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px 50px 160px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    /* background-color: red; */
+}
+
+.aboutMe img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.aboutMe .info {
+    width: 550px;
+}
+
+.phoneWarning {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+
+    body {
+        visibility: hidden;
+    }
+
+    .phoneWarning {
+        font-size: 70%;
+        display: block;
+        visibility: visible;
+    }
+}
