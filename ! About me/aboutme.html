@@ -12,17 +12,44 @@
     </head>
     <body>
         <header>
-            <div class="hamburgerMenu">
+            <nav class="hamburger">
+                <div class="hamburgerMenu" onclick="openHamburger();">
                     <img src="../Icons/hamburger.png" alt="Hamburger icon">
                     <p>Menu</p>
-            </div>
+                </div>
+
+                <nav class="hamburgerOpen hamburgerClosed" id="hamburgerOpenJS">
+                    <div class="s1">
+                        <div class="hamburgerNav" onclick="window.open(`../! Home/index.html`,`_self`)">
+                            <img src="../Icons/grid.png" alt="myworks icon">
+                            <p>My works</p>
+                        </div>
+
+                        <div class="hamburgerNav" onclick="
+                        openSkill();
+                        window.open(`../! About me/aboutme.html`,`_self`);
+                        ">
+                            <img src="../Icons/graduate.png" alt="skills icon">
+                            <p>Skills</p>
+                        </div>
+                    </div>
+                    
+                    <div class="s2">
+                        <h4>Contact</h4>
+                        <div class="hamburgerNav selected" onclick="window.open(`../! About me/aboutme.html`,`_self`)">
+                            <img src="../Icons/about.png" alt="about icon">
+                            <p>About</p>
+                        </div>
+                    </div>
+                </nav>
+            </nav>
 
             <ul>
                 <li><a href="../! Home/index.html" title="Works">Home</a></li>
                 <li><a href="../! About me/aboutme.html" class="currentlySelected" title="About me">About</a></li>
             </ul>
             
-            <div class="userProfile userOpen" title="About me">
+            <div class="userProfile userOpen" onclick="window.open('../! About me/aboutme.html','_self')" title="About me">
                 <div>
                     <p>binbows02</p>
                     <p class="p2">@k9lol.</p>
@@ -242,7 +269,7 @@
             <section class="sitemap">
                 <a href="../! Home/index.html">My Works</a> <p>|</p>
                 <a href="../! About me/aboutme.html">About Me</a> <p>|</p>
-                <a href="../! About me/aboutme.html">Skills</a>
+                <a href="../! About me/aboutme.html" onclick="openSkill();">Skills</a>
             </section>
 
             <section class="toTop">
@@ -255,4 +282,6 @@
     </body>
 
     <script src="../footer.js"></script>
+    <script src="../header.js"></script>
+    <script src="../overall.js"></script>
 </html>

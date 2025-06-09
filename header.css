@@ -41,10 +41,18 @@ ul {
     cursor: pointer;
 }
 
-.hamburgerMenu {
+.hamburger {
+    background-color: rgba(15, 15, 15, 1);
     position: fixed;
     z-index: 99;
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+}
 
+.hamburgerMenu {
     display: flex;
     align-items: center;
     background-color: rgba(37, 41, 43, 1);
@@ -70,8 +78,58 @@ ul {
     text-decoration: underline;
 }
 
+.hamburgerOpen {
+    width: fit-content;
+}
+
+.hamburgerOpen h4 {
+    padding: 0 30px 10px 20px
+}
+
+.hamburgerOpen .s1,
+.hamburgerOpen .s2 {
+    padding: 20px 0;
+}
+
+.hamburgerOpen .s1 {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.hamburgerOpen div .hamburgerNav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 13px 30px 13px 15px;
+    border-left: 4px solid transparent;
+
+    transition: background-color 150ms;
+}
+
+.hamburgerOpen div .hamburgerNav img {
+    width: 35px;
+}
+
+.hamburgerOpen div .hamburgerNav p {
+    font-family: istokWeb;
+}
+
+.hamburgerNav:hover {
+    background-color: rgba(30, 33, 34, 1);
+    cursor: pointer;
+}
+
+.hamburgerOpen div .selected {
+    border-left: 4px solid white;
+    background-color: rgba(49, 53, 56, 1);
+    border-radius: 5px;
+}
+
+.hamburgerClosed {
+    display: none;
+}
+
 .currentlySelected {
-    color: rgba(255, 224, 180, 1)
+    color: rgba(255, 224, 180, 1);
 }
 
 .userProfile .p2 {
