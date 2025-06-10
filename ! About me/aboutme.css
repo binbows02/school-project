@@ -17,7 +17,7 @@ main {
 }
 
 .contactMe {
-    margin: 80px 0;
+    margin: 40px 0 80px 0;
 }
 
 .contactMe .info img {
@@ -64,6 +64,7 @@ main {
 .skillset img {
     width: 35px;
     height: 35px;
+    object-fit: contain;
 }
 
 .randomStuff ul {
@@ -97,4 +98,22 @@ main {
 
 .skills {
     margin: 25% 0;
+}
+
+.about .socials {
+    width: fit-content;
+}
+
+.about .socials img {
+    width: 35px;
+    height: 35px;
+    opacity: 75%;
+    margin: 4px 10px;
+
+    transition: opacity 150ms;
+}
+
+.about .socials img:hover {
+    opacity: 100%;
+    cursor: pointer;
 }

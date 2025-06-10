@@ -6,8 +6,7 @@ header {
 
 ul {
     display: flex;
-    gap: 75px;
-    margin-left: 500px;
+    gap: 35px;
     padding: 0;
     margin-left: 220px;
 }
@@ -144,4 +143,8 @@ ul {
 
 .userOpen img {
     box-shadow: 0px 0px 7px rgb(255, 255, 255);
+}
+
+.userOpen:hover {
+    cursor: default;
 }
