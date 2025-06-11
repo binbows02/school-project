@@ -11,11 +11,11 @@ function typeWriting() {
     let i = 1;
     let x = 0;
     let text = {
-        t1: "‎ human (optional)",
-        t2: "‎ (hopefully full stack soon :pray:) web developer",
-        t3: "‎ noob animator :D",
-        t4: "n artist",
-        t5: "n UX/UI designer",
+        t1: "front-end dev | from Netherlands | 19yr old",
+        t2: "i like to UX / UI design aswell :)",
+        t3: "i also have interest in art & animations",
+        t4: "im a human (optional)",
+        t5: "i sometimes 3D model",
     };
 
     let textOutput = text[`t${i}`];
@@ -26,17 +26,17 @@ function typeWriting() {
         if (!deleting && x < textOutput.length) {
             document.getElementById("typeWritingJS").innerHTML += textOutput.charAt(x);
             x++;
-            setTimeout(typeWriter, 150);
+            setTimeout(typeWriter, 75);
         } else if (!deleting && x === textOutput.length) {
             deleting = true;
-            setTimeout(typeWriter, 3000);
+            setTimeout(typeWriter, 2750);
         } else if (deleting && x > 0) {
             document.getElementById("typeWritingJS").innerHTML = textOutput.substring(0, x - 1);
             x--;
-            setTimeout(typeWriter, 100);
+            setTimeout(typeWriter, 30);
         } else if (deleting && x === 0) {
             deleting = false;
-            setTimeout(typeWriter, 200);
+            setTimeout(typeWriter, 150);
 
             if (i < 5) {
                 i++;

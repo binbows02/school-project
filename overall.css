@@ -118,6 +118,7 @@ span,
 
 .primary {
     display: flex;
+    align-items: center;
     font-weight: 600;
     letter-spacing: 1.2px;
 

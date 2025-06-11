@@ -92,8 +92,20 @@ main {
     margin: 0 0 190px 0;
 }
 
-.stuffAboutMe div {
+.stuffAboutMe div:not(.randomStuff) {
     margin: 0 0 80px 0;
+}
+
+.stuffAboutMe div h4 {
+    margin: 0 0 15px 0;
+}
+
+.stuffAboutMe .lastUpdated {
+    margin: 30px 0;
+}
+
+.randomStuff {
+    margin: 200px 0;
 }
 
 .skills {
