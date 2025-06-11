@@ -116,29 +116,11 @@ span,
     font-size: 1rem;
 }
 
-.primary {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-
-    background-color: rgba(13, 78, 142, 1);
-    color: white;
-    border: none;
-    border-radius: 5px;
-
-    gap: 10px;
-    cursor: pointer;
-    transition: background-color 150ms;
-}
-
-.primary:hover {
-    background-color: rgba(18, 87, 154, 1);
-}
-
 .secondary:hover p,
-.secondary:hover {
+.secondary:hover,
+.secondary:hover svg {
     color: rgba(189, 212, 255, 1);
+    fill: rgba(189, 212, 255, 1);
 }
 
 .secondary {
@@ -164,6 +146,26 @@ span,
 .secondary:hover p,
 .secondary:hover {
     color: rgba(189, 212, 255, 1);
+}
+
+.primary {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+    background-color: rgba(13, 78, 142, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 150ms;
+}
+
+.primary:hover {
+    background-color: rgba(18, 87, 154, 1);
 }
 
 .robotoBold {
@@ -214,6 +216,14 @@ span,
 
 .blueLink {
     color: rgba(85, 159, 205, 1);
+}
+
+.aboutMe .info .moreInfo {
+    margin-top: 20px;
+}
+
+.aboutMe .info .moreInfo:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width:1100px) {

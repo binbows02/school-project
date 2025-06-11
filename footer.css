@@ -63,5 +63,12 @@ footer .socials {
 }
 
 .toTop button {
+    display: flex;
+    align-items: center;
     padding: 5px 15px 5px 20px;
+}
+
+.toTop button svg {
+    width: 20px;
+    height: 20px;
 }

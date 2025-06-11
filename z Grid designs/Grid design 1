@@ -1,0 +1,32 @@
+<div class="webDesign" onclick="window.open('../WD pages/wd1.html','_self');">
+    <img src="../Images/webDesigns/WD-1.png" alt="project image">
+    <div class="info">
+        <div>
+            <p class="robotoBold">The Dutch Store website rework | Figma Design</p>
+            <p class="p2">Apr. 25, 2025</p>
+        </div>
+        <img src="../Icons/arrow.png" alt="arrow icon">
+    </div>
+</div>
+
+<div class="webDesign" onclick="window.open('../WD pages/wd2.html','_self');">
+    <img src="../Images/webDesigns/WD-2.png" alt="project image">
+    <div class="info">
+        <div>
+            <p class="robotoBold">VCS Website revamped</p>
+            <p class="p2">Apr. 14, 2025</p>
+        </div>
+        <img src="../Icons/arrow.png" alt="arrow icon">
+    </div>
+</div>
+
+<div class="webDesign" onclick="window.open('../WD pages/wd3.html','_self');">
+    <img src="../Images/webDesigns/WD-3.png" alt="project image">
+    <div class="info">
+        <div>
+            <p class="robotoBold">Steppets</p>
+            <p class="p2">Nov. 20, 2023</p>
+        </div>
+        <img src="../Icons/arrow.png" alt="arrow icon">
+    </div>
+</div>

@@ -81,8 +81,8 @@ ul {
     width: fit-content;
 }
 
-.hamburgerOpen h4 {
-    padding: 0 30px 10px 20px
+.hamburgerOpen h3 {
+    padding: 0 30px 2.5px 20px;
 }
 
 .hamburgerOpen .s1,
@@ -92,6 +92,10 @@ ul {
 
 .hamburgerOpen .s1 {
     border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.hamburgerOpen .s2 a {
+    text-decoration: none;
 }
 
 .hamburgerOpen div .hamburgerNav {

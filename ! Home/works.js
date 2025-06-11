@@ -26,7 +26,7 @@ function typeWriting() {
         if (!deleting && x < textOutput.length) {
             document.getElementById("typeWritingJS").innerHTML += textOutput.charAt(x);
             x++;
-            setTimeout(typeWriter, 75);
+            setTimeout(typeWriter, 95);
         } else if (!deleting && x === textOutput.length) {
             deleting = true;
             setTimeout(typeWriter, 2750);
@@ -68,3 +68,99 @@ function scrollToTop() {
 
 typeWriting();
 typeLine();
+
+let gridNr = 0;
+
+autoSelect();
+
+function autoSelect() {
+    let gridSelection = document.querySelector(`.selectButtonJS.sel`);
+
+    if (gridSelection) {
+        if (gridSelection.classList.contains('selectWork1')) {
+            gridNr = 1;
+        } else if (gridSelection.classList.contains('selectWork2')) {
+            gridNr = 2;
+        } else if (gridSelection.classList.contains('selectWork3')) {
+            gridNr = 3;
+        }
+    }
+};
+
+function selectWork(select) {
+    let gridSelection = document.querySelector(`.${select}`);
+
+    if (!gridSelection.classList.contains('sel')) {
+        removeAllSelectionWork();
+
+        gridSelection.classList.add('primary');
+        gridSelection.classList.add('sel');
+        gridSelection.classList.remove('secondary');
+        gridSelection.classList.remove('unsel');
+    }
+};
+
+function removeAllSelectionWork() {
+    let gridSelection = document.querySelector('.sel')
+    if (gridSelection) {
+        gridSelection.classList.remove('primary');
+        gridSelection.classList.remove('sel');
+        gridSelection.classList.add('secondary');
+        gridSelection.classList.add('unsel');
+    }
+};
+
+let findGrid = document.querySelector('.grid');
+
+let gridDesign1HTML = `
+<div class="webDesign" onclick="window.open('../WD pages/wd1.html','_self');">
+    <img src="../Images/webDesigns/WD-1.png" alt="project image">
+    <div class="info">
+        <div>
+            <p class="robotoBold">The Dutch Store website rework | Figma Design</p>
+            <p class="p2">Apr. 25, 2025</p>
+        </div>
+        <img src="../Icons/arrow.png" alt="arrow icon">
+    </div>
+</div>
+
+<div class="webDesign" onclick="window.open('../WD pages/wd2.html','_self');">
+    <img src="../Images/webDesigns/WD-2.png" alt="project image">
+    <div class="info">
+        <div>
+            <p class="robotoBold">VCS Website revamped</p>
+            <p class="p2">Apr. 14, 2025</p>
+        </div>
+        <img src="../Icons/arrow.png" alt="arrow icon">
+    </div>
+</div>
+
+<div class="webDesign" onclick="window.open('../WD pages/wd3.html','_self');">
+    <img src="../Images/webDesigns/WD-3.png" alt="project image">
+    <div class="info">
+        <div>
+            <p class="robotoBold">Steppets</p>
+            <p class="p2">Nov. 20, 2023</p>
+        </div>
+        <img src="../Icons/arrow.png" alt="arrow icon">
+    </div>
+</div>
+`
+
+function setGrid(gridNum) {
+    if (gridNum == 1) {
+        findGrid.innerHTML = gridDesign1HTML;
+        gridNr = 1;
+    } else if (gridNum == 2) {
+        findGrid.innerHTML = '<p>work 2</p>'
+        gridNr = 2;
+    } else if (gridNum == 3) {
+        findGrid.innerHTML = '<p> work 3</p>'
+        gridNr = 3;
+    }
+    console.log(gridNr);
+};
+
+setGrid(gridNr);
+
+// findGrid.innerHTML = gridDesign1HTML;
