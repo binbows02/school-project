@@ -1,0 +1,21 @@
+<div class="artGrid">
+    <img src="../Images/Arts & 3D Works/disc1.png" alt="art" class="gridArt" onclick="openArtPopUp(1);">
+</div>
+
+<div class="artPopupDiv artPopupJS" onclick="closeArtPopUp();">
+    <div class="close">
+        <button onclick="closeArtPopUp();"><img src="../Icons/close.png" alt="close"></button>
+    </div>
+    
+    <div class="artPopup" onclick="closeArtPopUp();">
+        <div class="popupImageJS">
+            <img src="../Images/Arts & 3D Works/disc4.png" alt="art">
+        </div>
+        <div class="openinnewtab">
+            <a href="../Images/Arts & 3D Works/disc1.png" target="_blank" onclick="event.stopPropagation();">
+                <img src="../Icons/openinnewtab.png" alt="">
+                Open image in new tab
+            </a>`
+        </div>
+    </div>
+</div>

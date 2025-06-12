@@ -110,7 +110,35 @@ function removeAllSelectionWork() {
     }
 };
 
+function artGrid() {
+    let artGrid = document.querySelector(`.artGrid`);
+    for (let i = 1; i < 23; i++) {
+        artGrid.innerHTML +=
+            `<img src="../Images/Arts & 3D Works/disc${i}.png" alt="art" class="gridArt" onclick="openArtPopUp(${i});">`
+    }
+};
+
+function closeArtPopUp() {
+    let closeHTML = document.querySelector('.artPopupJS');
+    closeHTML.classList.add('APclosed');
+}
+
+function openArtPopUp(i) {
+    let closeHTML = document.querySelector('.artPopupJS');
+    let popupArtHTML = document.querySelector('.popupImageJS')
+    let popupHrefHTML = document.querySelector('.openinnewtab')
+
+    closeHTML.classList.remove('APclosed');
+    popupArtHTML.innerHTML = `<img src="../Images/Arts & 3D Works/disc${i}.png" alt="art">`
+    popupHrefHTML.innerHTML = `
+    <a href="../Images/Arts & 3D Works/disc${i}.png" target="_blank" onclick="event.stopPropagation();">
+        <img src="../Icons/openinnewtab.png" alt="">
+        Open image in new tab
+    </a>`
+}
+
 let findGrid = document.querySelector('.grid');
+let findTitle = document.querySelector(`.titleWork`);
 
 let gridDesign1HTML = `
 <div class="webDesign" onclick="window.open('../WD pages/wd1.html','_self');">
@@ -147,20 +175,66 @@ let gridDesign1HTML = `
 </div>
 `
 
+let titleWork1HTML = `
+<h2>Web designs</h2>
+<p>Figma web designs • HTML websites</p>
+`
+
+let gridDesign2HTML = `
+<div class="artGrid">
+</div>
+
+<div class="artPopupDiv artPopupJS APclosed" onclick="closeArtPopUp();">
+    <div class="close">
+        <button onclick="closeArtPopUp();"><img src="../Icons/close.png" alt="close"></button>
+    </div>
+    
+    <div class="artPopup" onclick="closeArtPopUp();">
+        <div class="popupImageJS">
+        </div>
+        <div class="openinnewtab">
+        </div>
+    </div>
+</div>
+`
+
+let titleWork2HTML = `
+<h2>Arts & 3D Works</h2>
+<p>2D sketches • reference drawings • illustrations • character designs • 3D works</p>
+`
+
+let gridDesign3HTML = `<p>work 3</p>
+`
+
+let titleWork3HTML = `
+<h2>2D Animations</h2>
+<p>Collections of my 2D animation works</p>
+`
+
 function setGrid(gridNum) {
     if (gridNum == 1) {
         findGrid.innerHTML = gridDesign1HTML;
+        findTitle.innerHTML = titleWork1HTML;
         gridNr = 1;
     } else if (gridNum == 2) {
-        findGrid.innerHTML = '<p>work 2</p>'
+        findGrid.innerHTML = gridDesign2HTML;
+        findTitle.innerHTML = titleWork2HTML;
+        artGrid();
         gridNr = 2;
     } else if (gridNum == 3) {
-        findGrid.innerHTML = '<p> work 3</p>'
+        findGrid.innerHTML = gridDesign3HTML;
+        findTitle.innerHTML = titleWork3HTML;
         gridNr = 3;
     }
     console.log(gridNr);
 };
 
 setGrid(gridNr);
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === "Escape") {
+        closeArtPopUp();
+    }
+});
 
 // findGrid.innerHTML = gridDesign1HTML;
