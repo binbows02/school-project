@@ -68,25 +68,28 @@ main .grid {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.scrollChev:hover {
+    cursor: pointer;
 }
 
 .scrollChev button {
     background-color: transparent;
-    padding: none;
+    border-radius: 5px;
     border: none;
-    padding: 5px 40px 0 40px;
+    padding: 10px 30px;
+    gap: 10px;
+
+    display: flex;
 
     transition: background-color 150ms;
 }
 
 .scrollChev button:hover {
+    background-color: rgb(28, 30, 31);
     cursor: pointer;
-    background-color: rgb(31, 36, 39);
-    border-radius: 5px;
-}
-
-.scrollChev button img {
-    width: 30px;
 }
 
 .splashText {
@@ -118,17 +121,8 @@ main .grid {
     text-decoration: underline;
 }
 
-.navOptions a {
-    opacity: 75%;
-    transition: opacity 150ms;
-}
-
-.navOptions a:hover {
-    opacity: 100%;
-}
-
 .navOptions button {
-    padding: 13px 35px;
+    padding: 13px 50px;
 }
 
 .navOptions {
